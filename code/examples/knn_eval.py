@@ -19,8 +19,8 @@ def main():
 	parser.add_argument('--info_dir', default=None, type=str, help = 'directory where ground truth is stored') 
 	parser.add_argument('--mini', action='store_true', help = 'used if evaluating on the mini db')
 	parser.add_argument('--dim', '-d', default=512, type=int, help = 'dimensionality after pcaw')
-	parser.add_argument('--t', '-t', default=None, type=float, help = 'softmax temperature')
-	parser.add_argument('--k', '-k', default=None, type=int, help = 'number of neighbors to consider')
+	parser.add_argument('--t', '-t', default=1, type=float, help = 'softmax temperature')
+	parser.add_argument('--k', '-k', default=1, type=int, help = 'number of neighbors to consider')
 	parser.add_argument('--autotune', action='store_true')
 	parser.add_argument('--log', default=None, type=str)
 	parser.add_argument('--val_eval', action='store_true', help = 'for evaluating on the val set')
@@ -161,7 +161,6 @@ def main():
 		clf = KNN_Classifier(K = int(best_params[1]['K']),t = float(best_params[1]['t']))
 
 	else:
-
 		clf = KNN_Classifier(K = args.k,t = args.t)
 
 

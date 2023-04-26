@@ -17,7 +17,7 @@ def gap(pred, score, class_ids):
     idx = np.argsort(-np.array(score), axis=0)
     rel = rel[idx] #sorting rel in descending order
 
-    nq_object = len(pred)-len([x for x in class_ids if x == [-1]]) #label of a distractor is -1
+    nq_object = len(pred)-len([x for x in class_ids if x == -1]) #label of a distractor is -1
 
     prec = np.cumsum(rel) / (1+np.array(np.arange(len(rel))))
     gap = (prec * rel).sum() / nq_object

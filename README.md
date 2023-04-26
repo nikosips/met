@@ -52,7 +52,7 @@ Navigate (```cd```) to ```[YOUR_MET_ROOT]/met```. ```[YOUR_MET_ROOT]``` is where
 
   For detailed explanation of the options run:  
   ```
-  python3 -m code.examples.extract_descriptors -h
+  python -m code.examples.extract_descriptors -h
   ```
 
 </details>
@@ -65,7 +65,7 @@ Navigate (```cd```) to ```[YOUR_MET_ROOT]/met```. ```[YOUR_MET_ROOT]``` is where
 
   For detailed explanation of the options run:  
   ```
-  python3 -m code.examples.knn_eval -h
+  python -m code.examples.knn_eval -h
   ```
 
   Example (using ground truth and descriptors downloaded from our website, after unzipping both):  
@@ -83,7 +83,7 @@ Navigate (```cd```) to ```[YOUR_MET_ROOT]/met```. ```[YOUR_MET_ROOT]``` is where
 
   For detailed explanation of the options run:  
   ```
-  python3 -m code.examples.train_contrastive -h
+  python -m code.examples.train_contrastive -h
   ```
 
 </details>
@@ -134,8 +134,8 @@ Navigate (```cd```) to ```[YOUR_MET_ROOT]/met```. ```[YOUR_MET_ROOT]``` is where
 
 ---
 
-### State
+### Feedback
 
-Repository is under update. Feel free to give feedback, by sending an email to: ypsilnik@fel.cvut.cz
+Feel free to give feedback, by sending an email to: ypsilnik@fel.cvut.cz
 
 ---
